@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Gradient Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+    body {
+    background: linear-gradient(197deg, #ff0000, #ffff00, #0000ff);
+}
+        
+    </style>
+<body>
+
+    <div class="main-container">
+        <h1>Advanced CSS Gradient Generator</h1>
+
+        <div class="generator-card">
+            
+            <div class="preview-box-container">
+                <div class="preview-box" id="preview-box"></div>
+            </div>
+
+            <div class="controls-container">
+                <div class="controls-group">
+                    <div class="control-item">
+                        <label for="color1">Color 1</label>
+                        <input type="color" id="color1" value="#1a2a6c">
+                    </div>
+                    <div class="control-item">
+                        <label for="color2">Color 2</label>
+                        <input type="color" id="color2" value="#b21f1f">
+                    </div>
+                    <div class="control-item">
+                        <label for="color3">Color 3</label>
+                        <input type="color" id="color3" value="#fdbb2d">
+                    </div>
+                </div>
+
+                <div class="controls-group">
+                    <div class="control-item">
+                        <label for="gradient-type">Gradient Type</label>
+                        <div class="toggle-switch">
+                            <button class="toggle-btn active" data-type="linear">Linear</button>
+                            <button class="toggle-btn" data-type="radial">Radial</button>
+                        </div>
+                    </div>
+                    <div class="control-item angle-item visible" id="angle-item">
+                        <label for="angle">Angle</label>
+                        <div class="input-range-wrapper">
+                            <input type="range" id="angle" min="0" max="360" value="90">
+                            <span id="angle-value">90°</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="output-container">
+                <textarea id="css-output" readonly></textarea>
+                <button id="copy-button">Copy CSS</button>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="website-sample">
+        <div class="hero-section" id="hero-section">
+            <header class="hero-header">
+                <div class="logo">Logo</div>
+                <nav class="hero-nav">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                </nav>
+            </header>
+            <div class="hero-content">
+                <h2>Your Website Header Here</h2>
+                <p>This is how your gradient will look on a website header.</p>
+                <button class="hero-button">Learn More</button>
+            </div>
+        </div>
+        
+    </div>
+    <div class="adsense-ad-container">
+</div>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
